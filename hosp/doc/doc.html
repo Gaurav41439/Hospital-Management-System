@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+
+<body>
+    <h1>User Information</h1>
+    <form action="doc.php" method="post" id="docForm">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact"><br><br>
+
+        <label for="qualification">Education:</label>
+        <input type="text" id="qualification" name="qualification"><br><br>
+
+        <label for="experience">Experience in years:</label>
+        <input type="text" id="experience" name="experience"><br><br>
+
+        <label for="speciality">Speciality:</label>
+        <input type="text" id="speciality" name="speciality"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+
+        <input id="submit" type="submit" value="Submit" name="submit">
+    </form>
+
+    <script>
+        document.getElementById("docForm").addEventListener("submit", function(event) {
+
+
+            var name = document.getElementById("name").value;
+            var dob = document.getElementById("dob").value;
+            var gender = document.getElementById("gender").value;
+            var contact = document.getElementById("contact").value;
+            var qualification = document.getElementById("qualification").value;
+            var experience = document.getElementById("experience").value;
+            var speciality = document.getElementById("speciality").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+        });
+    </script>
+
+</body>
+
+</html>
